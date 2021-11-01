@@ -7,11 +7,21 @@
         {% if winner == 'tie' %}
         <h2>The game was a Tie!</h2>
         <form action="/start">
-        <button>Play again?</button>
+        <button>Play a friend again?</button>
         </form>
+        <form action="/computer">
+        <button>Play the computer?</button>
+        </form>
+        
 
         {% else %}
         <h1>{{ winner }} wins!</h1>
+        <form action="/start">
+            <button>Play a friend again?</button>
+            </form>
+            <form action="/computer">
+            <button>Play the computer again?</button>
+            </form>
         {% endif %}
 
     {% endblock %}
