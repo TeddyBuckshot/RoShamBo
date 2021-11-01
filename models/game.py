@@ -1,3 +1,4 @@
+
 def play_game(choice1, choice2):
     winner = "player_two"
     if choice1 == choice2:
