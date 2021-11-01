@@ -26,3 +26,4 @@ def get_result():
 
 
     return render_template('result.html', player_name_1=new_player1.name, player_name_2=new_player2.name, player_one=player_one_choice, player_two=player_two_choice, winner=winner)
+
