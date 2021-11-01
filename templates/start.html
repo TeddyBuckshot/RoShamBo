@@ -1,21 +1,25 @@
 {% extends "base.html" %}
     {% block content %}
         <form action="/result" method="post">
-            <label for="name1">Player One Name</label>
+            <label for="name2">Please enter player one's name: </label>
             <input type="text" name="name1" id="name1">
+            <label for="choice1">Select player one's weapon: </label>
             <select name="choice1" id="choice1">
                 <option value="rock">Rock</option>
                 <option value="paper">Paper</option>
                 <option value="scissors">Scissors</option>
-            </select>   
+            </select>  
+<br> 
 <br>
-            <label for="name2">Player Two Name</label>
+            <label for="name2">Please enter player two's name: </label>
             <input type="text" name="name2" id="name2">
+            <label for="choice2">Select player two's weapon: </label>
             <select name="choice2" id="choice2">
                 <option value="rock">Rock</option>
                 <option value="paper">Paper</option>
                 <option value="scissors">Scissors</option>
             </select>
+<br>
 <br>
            <button>Play!</button>
 

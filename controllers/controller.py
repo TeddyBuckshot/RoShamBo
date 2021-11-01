@@ -22,7 +22,7 @@ def get_result():
     player_two_name = request.form['name2']
     player_two_choice = request.form['choice2']
     new_player2 = Player(player_two_name, player_two_choice)
-    winner = game.play_game(new_player1.choice, new_player2.choice)
+    winner = game.play_game(new_player1.name, new_player2.name, new_player1.choice, new_player2.choice)
 
 
     return render_template('result.html', player_name_1=new_player1.name, player_name_2=new_player2.name, player_one=player_one_choice, player_two=player_two_choice, winner=winner)
